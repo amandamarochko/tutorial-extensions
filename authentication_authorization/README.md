@@ -86,6 +86,9 @@ The nice thing here is that this _just works[TM]_. We don't have to deal with ha
 
 ```
 LOGIN_REDIRECT_URL = '/'
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, "mysite", "templates"),
+)
 ```
 
 Now when the login is accessed directly, it will redirect successful login to the top level index.
